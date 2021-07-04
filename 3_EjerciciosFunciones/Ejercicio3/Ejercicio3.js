@@ -6,4 +6,15 @@ como de triángulos, para ello, la función debe recibir 3 argumentos:
     ◦ “altura” : valor de la altura del triangulo o rectángulo.
 */
 
-//No entiendo la consigna
+function CalculoArea(flagTriangulo, base, altura){
+    if(flagTriangulo == true){
+        let area = (base * altura) / 2;
+        document.write(`Es un triángulo de ${area}cm² de área`);
+    }
+    else{
+        let area = base * altura;
+        document.write(`Es un rectángulo de ${area}cm² área`);
+    }
+}
+
+CalculoArea(false, 18, 12);
